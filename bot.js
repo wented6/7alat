@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const developers = ['521341978659651596'];
+const developers = ['538676483455975431'];
 
 
 client.on('ready', () => {
@@ -12,19 +12,19 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('.pl')) {
+if (message.content.startsWith('!pl')) {
 client.user.setActivity(argresult, {type:'Playing'});
     message.channel.send(` <: :white_check_mark:  **${argresult} \** `)
 } else 
-if (message.content.startsWith('.st')) {
+if (message.content.startsWith('!st')) {
   client.user.setGame(argresult, "https://www.twitch.tv/meercy");
    message.channel.send(` <: :white_check_mark:  **${argresult} \** `)
 } else
-if (message.content.startsWith('.ls')) {
+if (message.content.startsWith('!ls')) {
    client.user.setActivity(argresult, {type:'Listening'});
     message.channel.send(` <: :white_check_mark:  **${argresult} \** `)
 } else
-if (message.content.startsWith('.wt')) {
+if (message.content.startsWith('!wt')) {
    client.user.setActivity(argresult, {type:'Watching'});
     message.channel.send(` <: :white_check_mark:  **${argresult} \** `)
 }
