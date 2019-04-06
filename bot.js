@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var prefix = "-"// البرفكس هنا
 
 client.on('ready', () => {
   console.log(`تم تسجيل الدخول على ${client.user.tag}!`);
@@ -29,6 +30,9 @@ client.on('ready', () => {
 
 
 
+
+
+});
 
 
 
